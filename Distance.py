@@ -9,17 +9,6 @@ import logging
 
 from datetime import datetime, timezone
 
-
-
-
-
-
-
-
-    
-
-
-
 GPIO.setmode(GPIO.BCM)
 echo = 21
 trigger = 23
@@ -53,10 +42,7 @@ while True:
     distance_in = round(distance/2.54, 1)
     distance_ft = round((distance/2.54)/12, 1)
     
-       
-    
-            
-    
+   
     #Round to two decimal points
 
     if distance_cm > 2 and distance_cm < 400:      #Check whether the distance is within range
